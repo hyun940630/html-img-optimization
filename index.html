@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<main>
+			<h1>HTML img 최적화</h1>
+			<picture>
+				<source
+					srcset="https://naradesign.github.io/html5/img/small.avif"
+					type="image/avif"
+					media="(max-width:960px)"
+				/>
+				<source
+					srcset="https://naradesign.github.io/html5/img/large.avif"
+					type="image/avif"
+				/>
+				<source
+					srcset="https://naradesign.github.io/html5/img/small.webp"
+					type="image/webp"
+					media="(max-width:960px)"
+				/>
+				<source
+					srcset="https://naradesign.github.io/html5/img/large.webp"
+					type="image/webp"
+				/>
+				<img
+					srcset="https://naradesign.github.io/html5/img/small.jpg"
+					src="https://naradesign.github.io/html5/img/large.jpg"
+					loading="lazy"
+					decoding="async"
+					alt="opt_img"
+				/>
+			</picture>
+		</main>
+	</body>
+</html>
